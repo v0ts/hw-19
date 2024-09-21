@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" class="modal-open">open modal window</button>
+    <div class="backdrop hidden-modal">
+      <div class="modal">
+        <h2 class="modal-text">modal window</h2>
+        <p class="modal-subtext">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellat
+          vel ex obcaecati odit eaque nihil, neque nam doloremque ullam
+          asperiores veniam aperiam quisquam praesentium? Sequi voluptate optio
+          alias autem.
+        </p>
+        <button type="button" class="modal-close">close the modal</button>
+      </div>
+    </div>
+
+    <form class="form">
+      <p class="form-text">Choose a color:</p>
+      <label class="form-label">
+        white
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="white"
+          class="form-input"
+          checked
+        />
+      </label>
+      <label class="form-label">
+        red
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="red"
+          class="form-input"
+        />
+      </label>
+      <label class="form-label">
+        green
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="green"
+          class="form-input"
+        />
+      </label>
+    </form>
+
+    <input type="text" placeholder="your name?" class="name-input" />
+    <h2>hello <span class="name-output">незнайомець</span>!</h2>
+
+    <input
+      type="text"
+      class="validation-input"
+      data-length="6"
+      placeholder="write 6 symbols"
+    />
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

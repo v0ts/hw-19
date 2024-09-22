@@ -52,3 +52,13 @@ if(e.target.value.length === Number(validationInputEl.dataset.length)) {
   validationInputEl.classList.remove('valid')
 }
 });
+
+
+// last
+
+const fontSizeControlEl = document.querySelector(".font-size-control");
+const textSizeControlEl = document.querySelector(".text");
+
+fontSizeControlEl.addEventListener("input", (e) => {
+  textSizeControlEl.style.fontSize = e.target.value + 'px';
+});
